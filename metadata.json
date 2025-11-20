@@ -1,21 +1,16 @@
 {
-    "title": "",
-    "slug": "",
+    "title": "HTML: Tags",
+    "slug": "html-tags",
     "authors": [
-        "",
-        ""
+        "chris-cooling"
     ],
     "tags": [
-        "",
-        ""
+        "html"
     ],
-    "duration": 0,
+    "duration": 2,
     "prerequisites": [
-        "",
-        ""
+        "html-introduction"
     ],
     "related": [
-        "",
-        ""
     ]
 }
