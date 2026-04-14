@@ -1,6 +1,7 @@
 {
     "title": "HTML: Tags and Elements",
     "slug": "html-tags-elements",
+    "description":"An introduction to tags and elements in HTML, including void elements, nested tags and "
     "authors": [
         "chris-cooling"
     ],
@@ -12,5 +13,9 @@
         "html-introduction"
     ],
     "related": [
+        "html-heading-tags",
+        "html-paragraph-tag",
+        "html-hyperlinks-using-a-tag",
+        "html-classes"
     ]
 }
