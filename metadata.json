@@ -1,13 +1,13 @@
 {
-    "title": "HTML: Tags",
-    "slug": "html-tags",
+    "title": "HTML: Tags and Elements",
+    "slug": "html-tags-elements",
     "authors": [
         "chris-cooling"
     ],
     "tags": [
         "html"
     ],
-    "duration": 2,
+    "duration": 5,
     "prerequisites": [
         "html-introduction"
     ],

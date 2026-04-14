@@ -1,16 +1,31 @@
-<p>In HTML, a tag is a special code that defines the structure and content of a webpage. Tags are enclosed in angle brackets (<code>&lt;tag&gt;</code>) and usually come in pairs: an opening tag and a closing tag. The opening tag indicates the start of an element, while the closing tag indicates the end.</p>
+<p>In HTML, an <strong>element</strong> is a building block of a webpage that gives content structure and meaning. Elements are usually marked up using <strong>tags</strong>, which are keywords enclosed in angle brackets, such as <code>&lt;p&gt;</code>. Most elements use an <strong>opening tag</strong> to mark where the element begins and a <strong>closing tag</strong> — written with a forward slash, such as <code>&lt;/p&gt;</code> — to mark where it ends.</p>
 
-<p>Tags can perform various functions, such as:</p>
+<p>HTML elements can serve various purposes, such as:</p>
 <ul>
-    <li><strong>Defining headings:</strong> <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags are used for headings of different levels.</li>
-    <li><strong>Creating paragraphs:</strong> The <code>&lt;p&gt;</code> tag is used to define a paragraph of text.</li>
-    <li><strong>Adding links:</strong> The <code>&lt;a&gt;</code> tag is used to create hyperlinks to other webpages or resources.</li>
-    <li><strong>Inserting images:</strong> The <code>&lt;img&gt;</code> tag is used to embed images in a webpage.</li>
-    <li><strong>Creating lists:</strong> The <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags are used for unordered and ordered lists, respectively.</li>
+    <li><strong>Defining headings:</strong> Heading elements such as <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> are used for headings of different levels.</li>
+    <li><strong>Creating paragraphs:</strong> The paragraph element, marked up with the <code>&lt;p&gt;</code> tag, is used for blocks of text.</li>
+    <li><strong>Adding links:</strong> The link element, marked up with the <code>&lt;a&gt;</code> tag, creates hyperlinks to other webpages or resources.</li>
+    <li><strong>Inserting images:</strong> The image element, marked up with the <code>&lt;img&gt;</code> tag, embeds an image in a webpage.</li>
 </ul>
+
+<h2>Void Elements</h2>
+
+<p>Not all tags come in pairs. Some tags represent <strong>void elements</strong> — elements that have no content and therefore no closing tag. Common examples include <code>&lt;img&gt;</code> (image), <code>&lt;br&gt;</code> (line break), and <code>&lt;hr&gt;</code> (horizontal rule). These tags form an element on their own:</p>
+
+<pre><code>&lt;img src="photo.jpg" alt="A description of the photo"&gt;</code></pre>
+
+<h2>Tags vs Elements</h2>
+
+<p>It is worth distinguishing between a <em>tag</em> and an <em>element</em>: the tag is just the notation (e.g. <code>&lt;p&gt;</code> or <code>&lt;/p&gt;</code>), whereas the element is the complete construct. For most elements, this means an opening tag, some content, and a closing tag together. For void elements, such as <code>&lt;img&gt;</code>, the single tag alone constitutes the complete element.</p>
+
+<h2>Nesting Tags</h2>
+
+<p>Tags can be placed inside one another — this is called <strong>nesting</strong>. When tags are nested, they must be closed in the reverse order they were opened. For example, if a <code>&lt;strong&gt;</code> tag is opened inside a <code>&lt;p&gt;</code> tag, it must be closed before the <code>&lt;p&gt;</code> is closed:</p>
+
+<pre><code>&lt;p&gt;This is &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;</code></pre>
 
 <h2>Tag Attributes</h2>
 
-<p>Tags can also have attributes that provide additional information about the element. Attributes are included within the opening tag and usually come in name-value pairs. For example, the <code>&lt;a&gt;</code> tag can have an <code>href</code> attribute to specify the URL of the link:</p>
+<p>Tags can also have <strong>attributes</strong> that provide additional information about the element. Attributes are written inside the opening tag. Most attributes take a value in the form <code>name="value"</code>, but some are <strong>boolean attributes</strong> — their mere presence is enough to activate them, with no value required (e.g. <code>disabled</code>, <code>checked</code>). For example, the <code>&lt;a&gt;</code> tag uses the <code>href</code> attribute to specify the URL of the link:</p>
 
 <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example&lt;/a&gt;</code></pre>
